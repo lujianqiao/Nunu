@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NeedRechargeDiamondsView" customModule="Nunu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="433"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_coins" translatesAutoresizingMaskIntoConstraints="NO" id="Q3v-Uw-h9h">
+                    <rect key="frame" x="164" y="28.666666666666671" width="70" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="1w3-UE-E7t"/>
+                        <constraint firstAttribute="height" constant="53" id="NJH-PL-fGF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insufficient quantity of diamonds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBK-KZ-fil">
+                    <rect key="frame" x="74.333333333333329" y="98" width="249.33333333333337" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtz-3C-OqT">
+                    <rect key="frame" x="42" y="145.66666666666666" width="314" height="60"/>
+                    <color key="backgroundColor" red="0.92291742560000001" green="0.33448982240000003" blue="0.60785722730000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="IVM-qL-GA0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Recharge"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uG-dn-toh">
+                    <rect key="frame" x="42" y="231.66666666666663" width="314" height="60"/>
+                    <color key="backgroundColor" red="0.15737071629999999" green="0.16398704049999999" blue="0.20000475649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EJE-Ow-L5Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Cancellation"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1h-L7-QvA">
+                    <rect key="frame" x="348" y="21" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="pdf-Xn-ep0"/>
+                        <constraint firstAttribute="width" constant="30" id="qDE-zD-2Gv"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="delete_x"/>
+                    <connections>
+                        <action selector="deleteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ben-oJ-fNj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.1185244694" green="0.128189832" blue="0.18432062860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="qtz-3C-OqT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0QJ-Wa-gB0"/>
+                <constraint firstItem="wBK-KZ-fil" firstAttribute="top" secondItem="Q3v-Uw-h9h" secondAttribute="bottom" constant="16.5" id="5zv-sx-UEX"/>
+                <constraint firstItem="Q1h-L7-QvA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="C7J-wq-dIw"/>
+                <constraint firstItem="Q3v-Uw-h9h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28.5" id="PCE-iN-Xwo"/>
+                <constraint firstItem="5uG-dn-toh" firstAttribute="top" secondItem="qtz-3C-OqT" secondAttribute="bottom" constant="26" id="Pcb-lG-qcS"/>
+                <constraint firstAttribute="trailing" secondItem="Q1h-L7-QvA" secondAttribute="trailing" constant="20" id="TfG-ti-I6f"/>
+                <constraint firstItem="5uG-dn-toh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="42" id="W8j-s5-cu9"/>
+                <constraint firstItem="qtz-3C-OqT" firstAttribute="top" secondItem="wBK-KZ-fil" secondAttribute="bottom" constant="26.5" id="ZKz-sP-hDK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qtz-3C-OqT" secondAttribute="trailing" constant="42" id="bNY-wo-ZR2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5uG-dn-toh" secondAttribute="trailing" constant="42" id="caV-z0-fnK"/>
+                <constraint firstItem="qtz-3C-OqT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="42" id="gbJ-hI-ZDb"/>
+                <constraint firstItem="wBK-KZ-fil" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="gvD-zX-oWp"/>
+                <constraint firstItem="Q3v-Uw-h9h" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="z1d-Db-ujH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="5uG-dn-toh" id="PSc-zQ-GYF"/>
+                <outlet property="rechargeBtn" destination="qtz-3C-OqT" id="r0j-0q-ZcP"/>
+            </connections>
+            <point key="canvasLocation" x="65.648854961832058" y="167.25352112676057"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_x" width="20" height="20"/>
+        <image name="home_coins" width="70.666664123535156" height="53"/>
+    </resources>
+</document>

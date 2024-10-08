@@ -1,0 +1,1055 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D5663E1F83074F03A7B8AF /* Pods_Nunu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB5CC1BD6D5FF23E86307C5 /* Pods_Nunu.framework */; };
+		361FE4A52C887EDF008D7DCB /* LogOutContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361FE4A42C887EDF008D7DCB /* LogOutContentView.swift */; };
+		361FE4A72C887EED008D7DCB /* LogOutContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361FE4A62C887EED008D7DCB /* LogOutContentView.xib */; };
+		361FE4AA2C88872F008D7DCB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361FE4A92C88872F008D7DCB /* LogInViewController.swift */; };
+		361FE4AD2C88879D008D7DCB /* LogInContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361FE4AC2C88879D008D7DCB /* LogInContentView.swift */; };
+		361FE4B12C8889A6008D7DCB /* LogInContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361FE4B02C8889A6008D7DCB /* LogInContentView.xib */; };
+		36413DBE2C85F2FC0076D4DE /* MineContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36413DBC2C85F2FC0076D4DE /* MineContentView.swift */; };
+		36413DBF2C85F2FC0076D4DE /* MineContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36413DBD2C85F2FC0076D4DE /* MineContentView.xib */; };
+		36413DC52C85F6E70076D4DE /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36413DC32C85F6E70076D4DE /* MessageViewCell.swift */; };
+		36413DC62C85F6E70076D4DE /* MessageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36413DC42C85F6E70076D4DE /* MessageViewCell.xib */; };
+		364C4D672C87356100882FC5 /* ComplaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C4D662C87356100882FC5 /* ComplaintViewController.swift */; };
+		364C4D692C87357D00882FC5 /* ComplaintContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C4D682C87357D00882FC5 /* ComplaintContentView.swift */; };
+		364C4D6D2C8737D400882FC5 /* ComplaintContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364C4D6C2C8737D400882FC5 /* ComplaintContentView.xib */; };
+		364C4D6F2C87426100882FC5 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C4D6E2C87426100882FC5 /* AgreementViewController.swift */; };
+		364C4D712C87438400882FC5 /* AgreementContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364C4D702C87438400882FC5 /* AgreementContentView.swift */; };
+		364C4D752C87445000882FC5 /* AgreementContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364C4D742C87445000882FC5 /* AgreementContentView.xib */; };
+		36526AD22C981E4D00C32090 /* ChatVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36526AD12C981E4D00C32090 /* ChatVCTableViewCell.swift */; };
+		36526AD42C9827D900C32090 /* LUUILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36526AD32C9827D900C32090 /* LUUILabel+Ex.swift */; };
+		36526AD62C982DA300C32090 /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36526AD52C982DA300C32090 /* VideoCallViewController.swift */; };
+		366EE9C12C82FAA2000E70A1 /* LUColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366EE9C02C82FAA2000E70A1 /* LUColor+Extension.swift */; };
+		36792D222C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36792D212C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift */; };
+		3684A6DA2C9EB5470011DB9D /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3684A6D92C9EB5470011DB9D /* UserInfoModel.swift */; };
+		368967902C8F167F00D87F63 /* LUHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689678F2C8F167F00D87F63 /* LUHttp.swift */; };
+		368967922C8F24C400D87F63 /* LUHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368967912C8F24C400D87F63 /* LUHUD.swift */; };
+		3693864F2C82BEA000E74952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693864E2C82BEA000E74952 /* AppDelegate.swift */; };
+		369386512C82BEA000E74952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386502C82BEA000E74952 /* SceneDelegate.swift */; };
+		369386532C82BEA000E74952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386522C82BEA000E74952 /* ViewController.swift */; };
+		369386562C82BEA000E74952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369386542C82BEA000E74952 /* Main.storyboard */; };
+		369386582C82BEA600E74952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369386572C82BEA600E74952 /* Assets.xcassets */; };
+		3693865B2C82BEA600E74952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369386592C82BEA600E74952 /* LaunchScreen.storyboard */; };
+		369386662C82BEA600E74952 /* NunuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386652C82BEA600E74952 /* NunuTests.swift */; };
+		369386702C82BEA600E74952 /* NunuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693866F2C82BEA600E74952 /* NunuUITests.swift */; };
+		369386722C82BEA600E74952 /* NunuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386712C82BEA600E74952 /* NunuUITestsLaunchTests.swift */; };
+		369386932C82CAA800E74952 /* LUTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386922C82CAA800E74952 /* LUTabBarController.swift */; };
+		369386952C82DC0E00E74952 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386942C82DC0E00E74952 /* CustomTabBar.swift */; };
+		369386982C82E66900E74952 /* LUInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386972C82E66900E74952 /* LUInt+Extension.swift */; };
+		3693869B2C82E77000E74952 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693869A2C82E77000E74952 /* Constant.swift */; };
+		3693869D2C82EB3B00E74952 /* LUCGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693869C2C82EB3B00E74952 /* LUCGFloat+Extension.swift */; };
+		369386A22C82EC2A00E74952 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386A12C82EC2A00E74952 /* HomeViewController.swift */; };
+		369386A52C82EDA700E74952 /* LUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386A42C82EDA700E74952 /* LUNavigationController.swift */; };
+		369386A72C82EDE600E74952 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386A62C82EDE600E74952 /* MessageViewController.swift */; };
+		369386A92C82EDF900E74952 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386A82C82EDF900E74952 /* MineViewController.swift */; };
+		369386AB2C82EE1600E74952 /* LUTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369386AA2C82EE1600E74952 /* LUTabBarItem.swift */; };
+		369727452C8D6C1A003063C5 /* NeedRechargeDiamondsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369727442C8D6C1A003063C5 /* NeedRechargeDiamondsView.swift */; };
+		369727472C8D6CA7003063C5 /* NeedRechargeDiamondsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369727462C8D6CA7003063C5 /* NeedRechargeDiamondsView.xib */; };
+		369727492C8D747C003063C5 /* RechargeDiamondsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369727482C8D747C003063C5 /* RechargeDiamondsDetailView.swift */; };
+		36B9DEED2C89CCA000C11D9C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9DEEC2C89CCA000C11D9C /* RegisterViewController.swift */; };
+		36B9DEEF2C89CCC700C11D9C /* RegisterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9DEEE2C89CCC700C11D9C /* RegisterContentView.swift */; };
+		36B9DEF12C89CD0100C11D9C /* RegisterContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B9DEF02C89CD0100C11D9C /* RegisterContentView.xib */; };
+		36B9DEF42C89DB1400C11D9C /* ImproveInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9DEF22C89DB1400C11D9C /* ImproveInfoViewController.swift */; };
+		36B9DEF52C89DB1400C11D9C /* ImproveInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B9DEF32C89DB1400C11D9C /* ImproveInfoViewController.xib */; };
+		36C22C552C96B1C20002B4ED /* LUImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22C542C96B1C20002B4ED /* LUImage+Ex.swift */; };
+		36C22C572C96B4490002B4ED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22C562C96B4490002B4ED /* ChatViewController.swift */; };
+		36C22C592C96B6D90002B4ED /* ChatToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22C582C96B6D90002B4ED /* ChatToolBar.swift */; };
+		7FF51F3E08519873F3BAAD28 /* Pods_NunuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBD069DE20EB1B896FE49FE /* Pods_NunuTests.framework */; };
+		C5007B069D7434CB0CA14149 /* Pods_Nunu_NunuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECABAC6B4053FE445E1EA09B /* Pods_Nunu_NunuUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		369386622C82BEA600E74952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 369386432C82BEA000E74952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3693864A2C82BEA000E74952;
+			remoteInfo = Nunu;
+		};
+		3693866C2C82BEA600E74952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 369386432C82BEA000E74952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3693864A2C82BEA000E74952;
+			remoteInfo = Nunu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20E6F71BC451D47221C984EE /* Pods-Nunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nunu.debug.xcconfig"; path = "Target Support Files/Pods-Nunu/Pods-Nunu.debug.xcconfig"; sourceTree = "<group>"; };
+		361FE4A42C887EDF008D7DCB /* LogOutContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutContentView.swift; sourceTree = "<group>"; };
+		361FE4A62C887EED008D7DCB /* LogOutContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutContentView.xib; sourceTree = "<group>"; };
+		361FE4A92C88872F008D7DCB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		361FE4AC2C88879D008D7DCB /* LogInContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInContentView.swift; sourceTree = "<group>"; };
+		361FE4B02C8889A6008D7DCB /* LogInContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInContentView.xib; sourceTree = "<group>"; };
+		36413DBC2C85F2FC0076D4DE /* MineContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineContentView.swift; sourceTree = "<group>"; };
+		36413DBD2C85F2FC0076D4DE /* MineContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineContentView.xib; sourceTree = "<group>"; };
+		36413DC32C85F6E70076D4DE /* MessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
+		36413DC42C85F6E70076D4DE /* MessageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewCell.xib; sourceTree = "<group>"; };
+		364C4D662C87356100882FC5 /* ComplaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintViewController.swift; sourceTree = "<group>"; };
+		364C4D682C87357D00882FC5 /* ComplaintContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintContentView.swift; sourceTree = "<group>"; };
+		364C4D6C2C8737D400882FC5 /* ComplaintContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComplaintContentView.xib; sourceTree = "<group>"; };
+		364C4D6E2C87426100882FC5 /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		364C4D702C87438400882FC5 /* AgreementContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementContentView.swift; sourceTree = "<group>"; };
+		364C4D742C87445000882FC5 /* AgreementContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgreementContentView.xib; sourceTree = "<group>"; };
+		36526AD12C981E4D00C32090 /* ChatVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVCTableViewCell.swift; sourceTree = "<group>"; };
+		36526AD32C9827D900C32090 /* LUUILabel+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LUUILabel+Ex.swift"; sourceTree = "<group>"; };
+		36526AD52C982DA300C32090 /* VideoCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallViewController.swift; sourceTree = "<group>"; };
+		366EE9C02C82FAA2000E70A1 /* LUColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LUColor+Extension.swift"; sourceTree = "<group>"; };
+		36792D212C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeDiamondsAlertVC.swift; sourceTree = "<group>"; };
+		3684A6D92C9EB5470011DB9D /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		3689678F2C8F167F00D87F63 /* LUHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUHttp.swift; sourceTree = "<group>"; };
+		368967912C8F24C400D87F63 /* LUHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUHUD.swift; sourceTree = "<group>"; };
+		3693864B2C82BEA000E74952 /* Nunu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nunu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3693864E2C82BEA000E74952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		369386502C82BEA000E74952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		369386522C82BEA000E74952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		369386552C82BEA000E74952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		369386572C82BEA600E74952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3693865A2C82BEA600E74952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3693865C2C82BEA600E74952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369386612C82BEA600E74952 /* NunuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NunuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		369386652C82BEA600E74952 /* NunuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NunuTests.swift; sourceTree = "<group>"; };
+		3693866B2C82BEA600E74952 /* NunuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NunuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3693866F2C82BEA600E74952 /* NunuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NunuUITests.swift; sourceTree = "<group>"; };
+		369386712C82BEA600E74952 /* NunuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NunuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		369386922C82CAA800E74952 /* LUTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTabBarController.swift; sourceTree = "<group>"; };
+		369386942C82DC0E00E74952 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		369386972C82E66900E74952 /* LUInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LUInt+Extension.swift"; sourceTree = "<group>"; };
+		3693869A2C82E77000E74952 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3693869C2C82EB3B00E74952 /* LUCGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LUCGFloat+Extension.swift"; sourceTree = "<group>"; };
+		369386A12C82EC2A00E74952 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		369386A42C82EDA700E74952 /* LUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUNavigationController.swift; sourceTree = "<group>"; };
+		369386A62C82EDE600E74952 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		369386A82C82EDF900E74952 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		369386AA2C82EE1600E74952 /* LUTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTabBarItem.swift; sourceTree = "<group>"; };
+		369727442C8D6C1A003063C5 /* NeedRechargeDiamondsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedRechargeDiamondsView.swift; sourceTree = "<group>"; };
+		369727462C8D6CA7003063C5 /* NeedRechargeDiamondsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NeedRechargeDiamondsView.xib; sourceTree = "<group>"; };
+		369727482C8D747C003063C5 /* RechargeDiamondsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeDiamondsDetailView.swift; sourceTree = "<group>"; };
+		36B9DEEC2C89CCA000C11D9C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		36B9DEEE2C89CCC700C11D9C /* RegisterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContentView.swift; sourceTree = "<group>"; };
+		36B9DEF02C89CD0100C11D9C /* RegisterContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterContentView.xib; sourceTree = "<group>"; };
+		36B9DEF22C89DB1400C11D9C /* ImproveInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImproveInfoViewController.swift; sourceTree = "<group>"; };
+		36B9DEF32C89DB1400C11D9C /* ImproveInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImproveInfoViewController.xib; sourceTree = "<group>"; };
+		36C22C542C96B1C20002B4ED /* LUImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LUImage+Ex.swift"; sourceTree = "<group>"; };
+		36C22C562C96B4490002B4ED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		36C22C582C96B6D90002B4ED /* ChatToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatToolBar.swift; sourceTree = "<group>"; };
+		5EB5CC1BD6D5FF23E86307C5 /* Pods_Nunu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nunu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF735CF2E246CAAD7B107A3 /* Pods-Nunu-NunuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nunu-NunuUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nunu-NunuUITests/Pods-Nunu-NunuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BB533BE48742B89A4A057C3 /* Pods-NunuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NunuTests.debug.xcconfig"; path = "Target Support Files/Pods-NunuTests/Pods-NunuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		949E03486A0DF0C0EAD38B5C /* Pods-Nunu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nunu.release.xcconfig"; path = "Target Support Files/Pods-Nunu/Pods-Nunu.release.xcconfig"; sourceTree = "<group>"; };
+		D1116CD847CF9AF1C14001FC /* Pods-NunuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NunuTests.release.xcconfig"; path = "Target Support Files/Pods-NunuTests/Pods-NunuTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECABAC6B4053FE445E1EA09B /* Pods_Nunu_NunuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nunu_NunuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECBD069DE20EB1B896FE49FE /* Pods_NunuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NunuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0204841ED10A309968923E /* Pods-Nunu-NunuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nunu-NunuUITests.release.xcconfig"; path = "Target Support Files/Pods-Nunu-NunuUITests/Pods-Nunu-NunuUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		369386482C82BEA000E74952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D5663E1F83074F03A7B8AF /* Pods_Nunu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3693865E2C82BEA600E74952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF51F3E08519873F3BAAD28 /* Pods_NunuTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369386682C82BEA600E74952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5007B069D7434CB0CA14149 /* Pods_Nunu_NunuUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06954BE4204B2E2054FBB585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EB5CC1BD6D5FF23E86307C5 /* Pods_Nunu.framework */,
+				ECABAC6B4053FE445E1EA09B /* Pods_Nunu_NunuUITests.framework */,
+				ECBD069DE20EB1B896FE49FE /* Pods_NunuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		361FE4A82C888702008D7DCB /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				361FE4AB2C888746008D7DCB /* View */,
+				361FE4A92C88872F008D7DCB /* LogInViewController.swift */,
+				36B9DEEC2C89CCA000C11D9C /* RegisterViewController.swift */,
+				36B9DEF22C89DB1400C11D9C /* ImproveInfoViewController.swift */,
+				36B9DEF32C89DB1400C11D9C /* ImproveInfoViewController.xib */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		361FE4AB2C888746008D7DCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				361FE4AC2C88879D008D7DCB /* LogInContentView.swift */,
+				361FE4B02C8889A6008D7DCB /* LogInContentView.xib */,
+				36B9DEEE2C89CCC700C11D9C /* RegisterContentView.swift */,
+				36B9DEF02C89CD0100C11D9C /* RegisterContentView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36413DC02C85F58E0076D4DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36413DC32C85F6E70076D4DE /* MessageViewCell.swift */,
+				36413DC42C85F6E70076D4DE /* MessageViewCell.xib */,
+				36526AD12C981E4D00C32090 /* ChatVCTableViewCell.swift */,
+				36C22C582C96B6D90002B4ED /* ChatToolBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		366EE9C22C831C83000E70A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36413DBC2C85F2FC0076D4DE /* MineContentView.swift */,
+				36413DBD2C85F2FC0076D4DE /* MineContentView.xib */,
+				364C4D682C87357D00882FC5 /* ComplaintContentView.swift */,
+				364C4D6C2C8737D400882FC5 /* ComplaintContentView.xib */,
+				364C4D702C87438400882FC5 /* AgreementContentView.swift */,
+				364C4D742C87445000882FC5 /* AgreementContentView.xib */,
+				361FE4A42C887EDF008D7DCB /* LogOutContentView.swift */,
+				361FE4A62C887EED008D7DCB /* LogOutContentView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3684A6D82C9EB5340011DB9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3684A6D92C9EB5470011DB9D /* UserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3689678E2C8F166E00D87F63 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				3689678F2C8F167F00D87F63 /* LUHttp.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		369386422C82BEA000E74952 = {
+			isa = PBXGroup;
+			children = (
+				3693864D2C82BEA000E74952 /* Nunu */,
+				369386642C82BEA600E74952 /* NunuTests */,
+				3693866E2C82BEA600E74952 /* NunuUITests */,
+				3693864C2C82BEA000E74952 /* Products */,
+				76FF4935D2951A16B337CD51 /* Pods */,
+				06954BE4204B2E2054FBB585 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3693864C2C82BEA000E74952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3693864B2C82BEA000E74952 /* Nunu.app */,
+				369386612C82BEA600E74952 /* NunuTests.xctest */,
+				3693866B2C82BEA600E74952 /* NunuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3693864D2C82BEA000E74952 /* Nunu */ = {
+			isa = PBXGroup;
+			children = (
+				3689678E2C8F166E00D87F63 /* Http */,
+				361FE4A82C888702008D7DCB /* LogIn */,
+				369386A32C82ED7B00E74952 /* Navigation */,
+				3693869F2C82EC0700E74952 /* Home */,
+				3693869E2C82EC0700E74952 /* Message */,
+				369386A02C82EC0700E74952 /* Mine */,
+				369386992C82E75B00E74952 /* Other */,
+				369386962C82E65100E74952 /* Extension */,
+				369386912C82CA8500E74952 /* TabBar */,
+				3693864E2C82BEA000E74952 /* AppDelegate.swift */,
+				369386502C82BEA000E74952 /* SceneDelegate.swift */,
+				369386522C82BEA000E74952 /* ViewController.swift */,
+				369386542C82BEA000E74952 /* Main.storyboard */,
+				369386572C82BEA600E74952 /* Assets.xcassets */,
+				369386592C82BEA600E74952 /* LaunchScreen.storyboard */,
+				3693865C2C82BEA600E74952 /* Info.plist */,
+			);
+			path = Nunu;
+			sourceTree = "<group>";
+		};
+		369386642C82BEA600E74952 /* NunuTests */ = {
+			isa = PBXGroup;
+			children = (
+				369386652C82BEA600E74952 /* NunuTests.swift */,
+			);
+			path = NunuTests;
+			sourceTree = "<group>";
+		};
+		3693866E2C82BEA600E74952 /* NunuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3693866F2C82BEA600E74952 /* NunuUITests.swift */,
+				369386712C82BEA600E74952 /* NunuUITestsLaunchTests.swift */,
+			);
+			path = NunuUITests;
+			sourceTree = "<group>";
+		};
+		369386912C82CA8500E74952 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				369386922C82CAA800E74952 /* LUTabBarController.swift */,
+				369386942C82DC0E00E74952 /* CustomTabBar.swift */,
+				369386AA2C82EE1600E74952 /* LUTabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		369386962C82E65100E74952 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				369386972C82E66900E74952 /* LUInt+Extension.swift */,
+				366EE9C02C82FAA2000E70A1 /* LUColor+Extension.swift */,
+				3693869C2C82EB3B00E74952 /* LUCGFloat+Extension.swift */,
+				368967912C8F24C400D87F63 /* LUHUD.swift */,
+				36C22C542C96B1C20002B4ED /* LUImage+Ex.swift */,
+				36526AD32C9827D900C32090 /* LUUILabel+Ex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		369386992C82E75B00E74952 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3693869A2C82E77000E74952 /* Constant.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3693869E2C82EC0700E74952 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				36413DC02C85F58E0076D4DE /* View */,
+				369386A62C82EDE600E74952 /* MessageViewController.swift */,
+				36C22C562C96B4490002B4ED /* ChatViewController.swift */,
+				36526AD52C982DA300C32090 /* VideoCallViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3693869F2C82EC0700E74952 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				369727432C8D6BDA003063C5 /* View */,
+				369386A12C82EC2A00E74952 /* HomeViewController.swift */,
+				36792D212C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		369386A02C82EC0700E74952 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				3684A6D82C9EB5340011DB9D /* Model */,
+				366EE9C22C831C83000E70A1 /* View */,
+				369386A82C82EDF900E74952 /* MineViewController.swift */,
+				364C4D6E2C87426100882FC5 /* AgreementViewController.swift */,
+				364C4D662C87356100882FC5 /* ComplaintViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		369386A32C82ED7B00E74952 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				369386A42C82EDA700E74952 /* LUNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		369727432C8D6BDA003063C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				369727442C8D6C1A003063C5 /* NeedRechargeDiamondsView.swift */,
+				369727462C8D6CA7003063C5 /* NeedRechargeDiamondsView.xib */,
+				369727482C8D747C003063C5 /* RechargeDiamondsDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76FF4935D2951A16B337CD51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E6F71BC451D47221C984EE /* Pods-Nunu.debug.xcconfig */,
+				949E03486A0DF0C0EAD38B5C /* Pods-Nunu.release.xcconfig */,
+				6AF735CF2E246CAAD7B107A3 /* Pods-Nunu-NunuUITests.debug.xcconfig */,
+				FD0204841ED10A309968923E /* Pods-Nunu-NunuUITests.release.xcconfig */,
+				8BB533BE48742B89A4A057C3 /* Pods-NunuTests.debug.xcconfig */,
+				D1116CD847CF9AF1C14001FC /* Pods-NunuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3693864A2C82BEA000E74952 /* Nunu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369386752C82BEA600E74952 /* Build configuration list for PBXNativeTarget "Nunu" */;
+			buildPhases = (
+				62A410E96C54197DFC592994 /* [CP] Check Pods Manifest.lock */,
+				369386472C82BEA000E74952 /* Sources */,
+				369386482C82BEA000E74952 /* Frameworks */,
+				369386492C82BEA000E74952 /* Resources */,
+				394815EE7A67733FBBD97913 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nunu;
+			productName = Nunu;
+			productReference = 3693864B2C82BEA000E74952 /* Nunu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		369386602C82BEA600E74952 /* NunuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369386782C82BEA600E74952 /* Build configuration list for PBXNativeTarget "NunuTests" */;
+			buildPhases = (
+				C6CAB1A5FCB9CFA4B94CA148 /* [CP] Check Pods Manifest.lock */,
+				3693865D2C82BEA600E74952 /* Sources */,
+				3693865E2C82BEA600E74952 /* Frameworks */,
+				3693865F2C82BEA600E74952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				369386632C82BEA600E74952 /* PBXTargetDependency */,
+			);
+			name = NunuTests;
+			productName = NunuTests;
+			productReference = 369386612C82BEA600E74952 /* NunuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3693866A2C82BEA600E74952 /* NunuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3693867B2C82BEA600E74952 /* Build configuration list for PBXNativeTarget "NunuUITests" */;
+			buildPhases = (
+				4AD9DCF93A97256516D8D545 /* [CP] Check Pods Manifest.lock */,
+				369386672C82BEA600E74952 /* Sources */,
+				369386682C82BEA600E74952 /* Frameworks */,
+				369386692C82BEA600E74952 /* Resources */,
+				C53E301C2967D7FDC6A18E51 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3693866D2C82BEA600E74952 /* PBXTargetDependency */,
+			);
+			name = NunuUITests;
+			productName = NunuUITests;
+			productReference = 3693866B2C82BEA600E74952 /* NunuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		369386432C82BEA000E74952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3693864A2C82BEA000E74952 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					369386602C82BEA600E74952 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3693864A2C82BEA000E74952;
+					};
+					3693866A2C82BEA600E74952 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3693864A2C82BEA000E74952;
+					};
+				};
+			};
+			buildConfigurationList = 369386462C82BEA000E74952 /* Build configuration list for PBXProject "Nunu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 369386422C82BEA000E74952;
+			productRefGroup = 3693864C2C82BEA000E74952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3693864A2C82BEA000E74952 /* Nunu */,
+				369386602C82BEA600E74952 /* NunuTests */,
+				3693866A2C82BEA600E74952 /* NunuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		369386492C82BEA000E74952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364C4D6D2C8737D400882FC5 /* ComplaintContentView.xib in Resources */,
+				364C4D752C87445000882FC5 /* AgreementContentView.xib in Resources */,
+				36413DC62C85F6E70076D4DE /* MessageViewCell.xib in Resources */,
+				3693865B2C82BEA600E74952 /* LaunchScreen.storyboard in Resources */,
+				369386582C82BEA600E74952 /* Assets.xcassets in Resources */,
+				36B9DEF12C89CD0100C11D9C /* RegisterContentView.xib in Resources */,
+				361FE4B12C8889A6008D7DCB /* LogInContentView.xib in Resources */,
+				369386562C82BEA000E74952 /* Main.storyboard in Resources */,
+				369727472C8D6CA7003063C5 /* NeedRechargeDiamondsView.xib in Resources */,
+				36B9DEF52C89DB1400C11D9C /* ImproveInfoViewController.xib in Resources */,
+				361FE4A72C887EED008D7DCB /* LogOutContentView.xib in Resources */,
+				36413DBF2C85F2FC0076D4DE /* MineContentView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3693865F2C82BEA600E74952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369386692C82BEA600E74952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		394815EE7A67733FBBD97913 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nunu/Pods-Nunu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nunu/Pods-Nunu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nunu/Pods-Nunu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD9DCF93A97256516D8D545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nunu-NunuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62A410E96C54197DFC592994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nunu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53E301C2967D7FDC6A18E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nunu-NunuUITests/Pods-Nunu-NunuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nunu-NunuUITests/Pods-Nunu-NunuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nunu-NunuUITests/Pods-Nunu-NunuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6CAB1A5FCB9CFA4B94CA148 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NunuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		369386472C82BEA000E74952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36413DC52C85F6E70076D4DE /* MessageViewCell.swift in Sources */,
+				36B9DEF42C89DB1400C11D9C /* ImproveInfoViewController.swift in Sources */,
+				369386A52C82EDA700E74952 /* LUNavigationController.swift in Sources */,
+				361FE4AA2C88872F008D7DCB /* LogInViewController.swift in Sources */,
+				36526AD22C981E4D00C32090 /* ChatVCTableViewCell.swift in Sources */,
+				36B9DEED2C89CCA000C11D9C /* RegisterViewController.swift in Sources */,
+				3693869B2C82E77000E74952 /* Constant.swift in Sources */,
+				369386932C82CAA800E74952 /* LUTabBarController.swift in Sources */,
+				369386952C82DC0E00E74952 /* CustomTabBar.swift in Sources */,
+				369386982C82E66900E74952 /* LUInt+Extension.swift in Sources */,
+				369386532C82BEA000E74952 /* ViewController.swift in Sources */,
+				369386A22C82EC2A00E74952 /* HomeViewController.swift in Sources */,
+				361FE4AD2C88879D008D7DCB /* LogInContentView.swift in Sources */,
+				36526AD62C982DA300C32090 /* VideoCallViewController.swift in Sources */,
+				364C4D692C87357D00882FC5 /* ComplaintContentView.swift in Sources */,
+				36C22C572C96B4490002B4ED /* ChatViewController.swift in Sources */,
+				364C4D712C87438400882FC5 /* AgreementContentView.swift in Sources */,
+				36526AD42C9827D900C32090 /* LUUILabel+Ex.swift in Sources */,
+				3684A6DA2C9EB5470011DB9D /* UserInfoModel.swift in Sources */,
+				364C4D672C87356100882FC5 /* ComplaintViewController.swift in Sources */,
+				369386A72C82EDE600E74952 /* MessageViewController.swift in Sources */,
+				369727452C8D6C1A003063C5 /* NeedRechargeDiamondsView.swift in Sources */,
+				36413DBE2C85F2FC0076D4DE /* MineContentView.swift in Sources */,
+				3693869D2C82EB3B00E74952 /* LUCGFloat+Extension.swift in Sources */,
+				36792D222C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift in Sources */,
+				36C22C592C96B6D90002B4ED /* ChatToolBar.swift in Sources */,
+				368967902C8F167F00D87F63 /* LUHttp.swift in Sources */,
+				361FE4A52C887EDF008D7DCB /* LogOutContentView.swift in Sources */,
+				3693864F2C82BEA000E74952 /* AppDelegate.swift in Sources */,
+				36C22C552C96B1C20002B4ED /* LUImage+Ex.swift in Sources */,
+				369386AB2C82EE1600E74952 /* LUTabBarItem.swift in Sources */,
+				369386512C82BEA000E74952 /* SceneDelegate.swift in Sources */,
+				369727492C8D747C003063C5 /* RechargeDiamondsDetailView.swift in Sources */,
+				368967922C8F24C400D87F63 /* LUHUD.swift in Sources */,
+				364C4D6F2C87426100882FC5 /* AgreementViewController.swift in Sources */,
+				366EE9C12C82FAA2000E70A1 /* LUColor+Extension.swift in Sources */,
+				36B9DEEF2C89CCC700C11D9C /* RegisterContentView.swift in Sources */,
+				369386A92C82EDF900E74952 /* MineViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3693865D2C82BEA600E74952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369386662C82BEA600E74952 /* NunuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369386672C82BEA600E74952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369386722C82BEA600E74952 /* NunuUITestsLaunchTests.swift in Sources */,
+				369386702C82BEA600E74952 /* NunuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		369386632C82BEA600E74952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3693864A2C82BEA000E74952 /* Nunu */;
+			targetProxy = 369386622C82BEA600E74952 /* PBXContainerItemProxy */;
+		};
+		3693866D2C82BEA600E74952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3693864A2C82BEA000E74952 /* Nunu */;
+			targetProxy = 3693866C2C82BEA600E74952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		369386542C82BEA000E74952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369386552C82BEA000E74952 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		369386592C82BEA600E74952 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3693865A2C82BEA600E74952 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		369386732C82BEA600E74952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		369386742C82BEA600E74952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		369386762C82BEA600E74952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E6F71BC451D47221C984EE /* Pods-Nunu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D93FAJ658V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nunu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nunu;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your consent is required to access the album so that you can get pictures from the album and upload your avatar.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LU.Nunu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		369386772C82BEA600E74952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949E03486A0DF0C0EAD38B5C /* Pods-Nunu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D93FAJ658V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nunu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nunu;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your consent is required to access the album so that you can get pictures from the album and upload your avatar.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LU.Nunu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		369386792C82BEA600E74952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB533BE48742B89A4A057C3 /* Pods-NunuTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D93FAJ658V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LU.NunuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nunu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nunu";
+			};
+			name = Debug;
+		};
+		3693867A2C82BEA600E74952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1116CD847CF9AF1C14001FC /* Pods-NunuTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D93FAJ658V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LU.NunuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nunu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nunu";
+			};
+			name = Release;
+		};
+		3693867C2C82BEA600E74952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF735CF2E246CAAD7B107A3 /* Pods-Nunu-NunuUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D93FAJ658V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LU.NunuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nunu;
+			};
+			name = Debug;
+		};
+		3693867D2C82BEA600E74952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0204841ED10A309968923E /* Pods-Nunu-NunuUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D93FAJ658V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LU.NunuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nunu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		369386462C82BEA000E74952 /* Build configuration list for PBXProject "Nunu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369386732C82BEA600E74952 /* Debug */,
+				369386742C82BEA600E74952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369386752C82BEA600E74952 /* Build configuration list for PBXNativeTarget "Nunu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369386762C82BEA600E74952 /* Debug */,
+				369386772C82BEA600E74952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369386782C82BEA600E74952 /* Build configuration list for PBXNativeTarget "NunuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369386792C82BEA600E74952 /* Debug */,
+				3693867A2C82BEA600E74952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3693867B2C82BEA600E74952 /* Build configuration list for PBXNativeTarget "NunuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3693867C2C82BEA600E74952 /* Debug */,
+				3693867D2C82BEA600E74952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 369386432C82BEA000E74952 /* Project object */;
+}

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "rolandwinston_Asian_girl_beautiful_delicate_features_long_hair__0c8e9d4a-c6a1-4b86-85ed-0194fd243a6d.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

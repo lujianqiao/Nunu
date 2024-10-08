@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LogInContentView" customModule="Nunu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log_in_bg" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-HO-qF8">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B9-VW-Gx2">
+                    <rect key="frame" x="51.666666666666657" y="636" width="290" height="60"/>
+                    <color key="backgroundColor" red="0.15737071629999999" green="0.16398704049999999" blue="0.20000475649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="gMX-Wd-EBb"/>
+                        <constraint firstAttribute="height" constant="60" id="ukW-Hz-GSc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Email registration"/>
+                    <connections>
+                        <action selector="registerAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gJA-AK-p2a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjt-5H-Vif">
+                    <rect key="frame" x="57" y="760" width="279" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <string key="title">I agree to read and agree to the User Agreement 
+and Privacy Agreement</string>
+                        <color key="titleColor" red="0.71372562650000004" green="0.71372550729999995" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF9-xA-Xi6">
+                    <rect key="frame" x="51.666666666666657" y="550" width="290" height="60"/>
+                    <color key="backgroundColor" red="0.92291742560000001" green="0.33448982240000003" blue="0.60785722730000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="yeW-S6-fKM"/>
+                        <constraint firstAttribute="width" constant="290" id="yf7-Ah-yNs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Quick Logon"/>
+                    <connections>
+                        <action selector="logInAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="o1O-pj-02j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bjt-5H-Vif" secondAttribute="bottom" constant="51" id="0IS-KU-Gvu"/>
+                <constraint firstItem="aMo-HO-qF8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1jY-dI-H2x"/>
+                <constraint firstItem="fF9-xA-Xi6" firstAttribute="centerX" secondItem="aMo-HO-qF8" secondAttribute="centerX" id="8QD-77-yzj"/>
+                <constraint firstItem="7B9-VW-Gx2" firstAttribute="top" secondItem="fF9-xA-Xi6" secondAttribute="bottom" constant="26" id="OiN-ZA-aUW"/>
+                <constraint firstItem="bjt-5H-Vif" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="57" id="XQ1-9X-0jt"/>
+                <constraint firstAttribute="bottom" secondItem="7B9-VW-Gx2" secondAttribute="bottom" constant="156" id="YiX-vx-yan"/>
+                <constraint firstItem="aMo-HO-qF8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aDk-42-KXy"/>
+                <constraint firstItem="bjt-5H-Vif" firstAttribute="centerX" secondItem="aMo-HO-qF8" secondAttribute="centerX" id="ewf-9U-WXd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aMo-HO-qF8" secondAttribute="trailing" id="nB9-ZX-yPb"/>
+                <constraint firstAttribute="bottom" secondItem="aMo-HO-qF8" secondAttribute="bottom" id="r3O-wf-hpj"/>
+                <constraint firstAttribute="trailing" secondItem="bjt-5H-Vif" secondAttribute="trailing" constant="57" id="sa7-MV-go2"/>
+                <constraint firstItem="7B9-VW-Gx2" firstAttribute="centerX" secondItem="aMo-HO-qF8" secondAttribute="centerX" id="uaw-5m-nrD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loginBtn" destination="fF9-xA-Xi6" id="9AK-lO-NWS"/>
+                <outlet property="registerBtn" destination="7B9-VW-Gx2" id="DRi-Qe-Im6"/>
+            </connections>
+            <point key="canvasLocation" x="64.885496183206101" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="log_in_bg" width="652" height="1416"/>
+    </resources>
+</document>
