@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = LogInViewController()
         }
         
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
