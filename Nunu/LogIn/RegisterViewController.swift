@@ -39,20 +39,21 @@ class RegisterViewController: UIViewController {
 
     
     func registerAction(account: String, pw: String) {
+        let hud = LUHUD.showHUD()
         httpProvider.request(.register(account, pw)) { result in
-            
+            hud.hide(animated: true)
             switch result {
             case .success(let response):
                 guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
                 guard let data = json["data"] as? [String: Any] else {return}
                 guard let access_token = data["access_token"] as? String else {return}
-                LUConstant.setUserDefaultsData(with: access_token, key: LUConstant.userTokenKey)
+                guard let token_type = data["token_type"] as? String else {return}
+                LUConstant.setUserDefaultsData(with: "\(token_type) \(access_token)", key: LUConstant.userTokenKey)
                 let vc = ImproveInfoViewController()
                 self.navigationController?.pushViewController(vc, animated: true)
             case .failure(let _):
                 LUHUD.showText(text: "Data anomalies")
             }
-            
         }
     }
     

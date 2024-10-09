@@ -84,7 +84,14 @@ class ImproveInfoViewController: UIViewController {
                 UserInfoModel.share.userName = name
                 UserInfoModel.share.userGender = gender
                 
-                self.navigationController?.popViewController(animated: true)
+                
+                if self.navigationController?.viewControllers.contains(where: {$0 .isKind(of: RegisterViewController.self)}) == true {
+                    let delegate = LUConstant.getSceneDelegate()
+                    delegate?.window?.rootViewController = LUTabBarController()
+                } else {
+                    self.navigationController?.popViewController(animated: true)
+                }
+                
             case .failure(let _):
                 hud.hide(animated: true)
                 LUHUD.showText(text: "Data anomalies")

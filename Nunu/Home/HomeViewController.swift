@@ -93,10 +93,6 @@ class HomeViewController: UIViewController {
         let vc = ChatViewController()
         vc.chatID = data
         self.navigationController?.pushViewController(vc, animated: true)
-        
-//        let vc = RechargeDiamondsAlertVC()
-//        vc.modalPresentationStyle = .overFullScreen
-//        self.present(vc, animated: true)
     }
     
 }

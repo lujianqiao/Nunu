@@ -15,6 +15,10 @@ target 'Nunu' do
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'TZImagePickerController'
   pod 'JXBanner'
+  # 自动管理键盘
+  pod 'IQKeyboardManagerSwift', '6.2.1'
+  
+  pod 'HandyJSON', '~> 5.0.2'
 
   target 'NunuTests' do
     inherit! :search_paths

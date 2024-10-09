@@ -10,13 +10,13 @@ import Moya
 
 let httpProvider = MoyaProvider<LUHttp>()
 
-
 enum LUHttp {
     
     case register(_ account: String, _ passwd: String)
     case improveInfo(_ name: String, _ gender: Int)
     case quickLogon
     case getUserInfo
+    case payConfigList
 }
 
 extension LUHttp: TargetType {
@@ -34,12 +34,14 @@ extension LUHttp: TargetType {
             return "/user/loginGuest"
         case .getUserInfo:
             return "/user/userInfo"
+        case .payConfigList:
+            return "/pay/confList"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .register, .improveInfo, .quickLogon, .getUserInfo:
+        case .register, .improveInfo, .quickLogon, .getUserInfo, .payConfigList:
             return .post
         }
     }
@@ -66,7 +68,7 @@ extension LUHttp: TargetType {
             
             return .requestCompositeData(bodyData: data, urlParameters:[:])
             
-        case .getUserInfo:
+        case .getUserInfo, .payConfigList:
             return .requestCompositeData(bodyData: Data(), urlParameters:[:])
         }
     }

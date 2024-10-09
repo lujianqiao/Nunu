@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        initThreeLibrary()
         
         if let auth = LUConstant.getUserDefaultsData(with: LUConstant.userTokenKey) {
             window?.rootViewController = LUTabBarController()
@@ -56,5 +59,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+    /// 三方库相关初始化配置
+    func initThreeLibrary() {
+        // 配置 IQKeyboardManager
+        IQKeyboardManager.shared.enable = true
+        // 点击空白处收起键盘
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+    }
 }
 

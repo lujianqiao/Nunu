@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (5.7.1)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManagerSwift (6.2.1)
   - JXBanner (0.3.6):
     - JXBanner/Banner (= 0.3.6)
     - JXBanner/PageControl (= 0.3.6)
@@ -45,6 +47,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - HandyJSON (~> 5.0.2)
+  - IQKeyboardManagerSwift (= 6.2.1)
   - JXBanner
   - MBProgressHUD (~> 1.2.0)
   - Moya
@@ -54,6 +58,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - HandyJSON
+    - IQKeyboardManagerSwift
     - JXBanner
     - JXPageControl
     - MBProgressHUD
@@ -63,6 +69,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
   JXBanner: 348dbef856e786494cbf30fb45d6b84826f2d3c5
   JXPageControl: e9487b39e2e58fc17790833214f3b8e935bef98b
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -70,6 +78,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
 
-PODFILE CHECKSUM: ab0db1ccbc8491f704d1f1ef6791428908d77ab1
+PODFILE CHECKSUM: 488c1d93d0ca8ece869084cca8ad72e50fe428d4
 
 COCOAPODS: 1.15.2

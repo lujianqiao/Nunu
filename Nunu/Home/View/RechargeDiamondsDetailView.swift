@@ -9,6 +9,13 @@ import UIKit
 
 class RechargeDiamondsDetailView: UIView {
 
+    /// 退出
+    var deleteBlock: (() -> Void)?
+    /// 充值
+    var rechargeBlock: ((PayConfigModel) -> Void)?
+    
+    var datas: [PayConfigModel] = []
+    
     lazy var titleLabel: UILabel = {
         let lab = UILabel()
         lab.text = "Recharge"
@@ -40,7 +47,7 @@ class RechargeDiamondsDetailView: UIView {
     
     lazy var quantityNumLab: UILabel = {
         let lab = UILabel()
-        lab.text = "10000"
+        lab.text = "0"
         lab.textColor = .white
         lab.font = .boldSystemFont(ofSize: 17)
         return lab
@@ -49,6 +56,7 @@ class RechargeDiamondsDetailView: UIView {
     lazy var deleteBtn: UIButton = {
         let btn = UIButton(type: .custom)
         btn.setImage(UIImage(named: "delete_x"), for: .normal)
+        btn.addTarget(self, action: #selector(deleteBtnAction), for: .touchUpInside)
         return btn
     }()
     
@@ -70,6 +78,7 @@ class RechargeDiamondsDetailView: UIView {
         btn.titleLabel?.font = .systemFont(ofSize: 17)
         btn.backgroundColor = .init(red: 255 / 255, green: 69 / 255, blue: 157 / 255, alpha: 1)
         btn.layer.cornerRadius = 10
+        btn.addTarget(self, action: #selector(RechargeBtnAction), for: .touchUpInside)
         return btn
     }()
     
@@ -82,6 +91,7 @@ class RechargeDiamondsDetailView: UIView {
         btn.layer.cornerRadius = 10
         btn.layer.borderColor = UIColor.init(red: 255 / 255, green: 69 / 255, blue: 157 / 255, alpha: 1).cgColor
         btn.layer.borderWidth = 1
+        btn.addTarget(self, action: #selector(cancelBtnAction), for: .touchUpInside)
         return btn
     }()
     
@@ -155,11 +165,32 @@ class RechargeDiamondsDetailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
 }
+
+extension RechargeDiamondsDetailView {
+    
+    @objc func deleteBtnAction() {
+        guard let block = deleteBlock else {return}
+        block()
+    }
+    
+    @objc func cancelBtnAction() {
+        guard let block = deleteBlock else {return}
+        block()
+    }
+    
+    @objc func RechargeBtnAction() {
+        guard let block = rechargeBlock else {return}
+        guard let item = datas.first(where: {$0.selected}) else {return}
+        block(item)
+    }
+}
+
 
 extension RechargeDiamondsDetailView : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return datas.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -168,6 +199,7 @@ extension RechargeDiamondsDetailView : UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RechargeDiamondsDetailCell.self)) as? RechargeDiamondsDetailCell
+        cell?.reloadRechargeData(with: datas[indexPath.section])
         return cell ?? UITableViewCell()
     }
     
@@ -188,6 +220,22 @@ extension RechargeDiamondsDetailView : UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.01
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        datas = datas.map({ item in
+            var result = item
+            result.selected = false
+            return result
+        })
+        
+        var item = datas[indexPath.section]
+        item.selected = true
+        datas[indexPath.section] = item
+        tableView.reloadData()
+        
+        quantityNumLab.text = "\(item.chips)"
+    }
+    
 }
 
 
@@ -254,6 +302,13 @@ class RechargeDiamondsDetailCell : UITableViewCell {
             make.right.equalToSuperview().inset(23)
         }
     }
+    
+    func reloadRechargeData(with model: PayConfigModel) {
+        numLab.text = "\(model.chips)"
+        valueLab.text = "$\(model.money)"
+        bgView.backgroundColor = model.selected ? UIColor.init(hex: "#F56A7E") : UIColor.init(hex: "#1D2130")
+    }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

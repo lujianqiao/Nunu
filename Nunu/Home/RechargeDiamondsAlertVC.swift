@@ -9,6 +9,8 @@ import UIKit
 
 class RechargeDiamondsAlertVC: UIViewController {
 
+    var datas: [PayConfigModel] = []
+    
     lazy var bgView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(white: 0, alpha: 0.5)
@@ -17,10 +19,10 @@ class RechargeDiamondsAlertVC: UIViewController {
         return view
     }()
     
-    lazy var needRecharge: NeedRechargeDiamondsView = {
-        let view = NeedRechargeDiamondsView.view()
-        return view
-    }()
+//    lazy var needRecharge: NeedRechargeDiamondsView = {
+//        let view = NeedRechargeDiamondsView.view()
+//        return view
+//    }()
     
     lazy var diamondsView: RechargeDiamondsDetailView = {
         let view = RechargeDiamondsDetailView()
@@ -55,6 +57,18 @@ class RechargeDiamondsAlertVC: UIViewController {
         diamondsView.snp.makeConstraints { make in
             make.left.bottom.right.equalToSuperview()
             make.height.equalTo(LUConstant.kScreenHeight - 118)
+        }
+        
+        diamondsView.datas = datas
+        
+        diamondsView.deleteBlock = { [weak self] in
+            guard let self = self else { return }
+            self.dismiss(animated: true)
+        }
+        
+        diamondsView.rechargeBlock = {[weak self] model in
+            guard let self = self else { return }
+            // TODO: -充值
         }
     }
     

@@ -11,6 +11,7 @@ class MineContentView: UIView {
 
     var userInfoBlock:(() -> Void)?
     var bottonItemClickBlock: ((Int) -> Void)?
+    var beanBGViewClickBlock: (() -> Void)?
     
     /// 头像
     @IBOutlet weak var avatarBtn: UIButton!
@@ -48,6 +49,8 @@ class MineContentView: UIView {
         nameLab.addGestureRecognizer(tap)
         
         beanBGView.layer.cornerRadius = 10
+        let beanBGViewTap = UITapGestureRecognizer(target: self, action: #selector(beanBGViewTap))
+        beanBGView.addGestureRecognizer(beanBGViewTap)
     }
     
     func loadAvatar() {
@@ -64,6 +67,12 @@ class MineContentView: UIView {
         }
     }
     
+    
+    @objc func beanBGViewTap() {
+        if let block = beanBGViewClickBlock {
+            block()
+        }
+    }
     
     @IBAction func userInfoAction(_ sender: Any) {
         if let block = userInfoBlock {

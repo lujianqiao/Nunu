@@ -74,28 +74,63 @@ class MineViewController: UIViewController {
                 return
             }
         }
+        
+        mineView.beanBGViewClickBlock = { [weak self] in
+            guard let self = self else { return }
+            
+            self.getRechargeList()
+            
+        }
 
     }
 
+}
+
+extension MineViewController {
     func getUserInfo() {
         mineView.reloadUserInfo(with: UserInfoModel.share)
         
         
-//        httpProvider.request(.getUserInfo) { result in
-//
-//            switch result {
-//            case .success(let response):
-//                guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
-//                guard let data = json["data"] as? [String: Any] else {return}
-//                print("")
-//
-//
-//
-//            case .failure(let _):
-//                LUHUD.showText(text: "Data anomalies")
-//            }
-//
-//        }
+        httpProvider.request(.getUserInfo) { result in
+
+            switch result {
+            case .success(let response):
+                guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
+                guard let data = json["data"] as? [String: Any] else {return}
+                print("")
+
+
+
+            case .failure(let _):
+                LUHUD.showText(text: "Data anomalies")
+            }
+
+        }
     }
     
+    func getRechargeList() {
+        
+        let hud = LUHUD.showHUD()
+        httpProvider.request(.payConfigList) { result in
+
+            hud.hide(animated: true)
+            switch result {
+            case .success(let response):
+                guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
+                guard let data = json["data"] as? [Any] else {return}
+                guard let models = [PayConfigModel].deserialize(from: data) else {return}
+                let datas = models.filter({$0 != nil}).map({$0!})
+                
+                let vc = RechargeDiamondsAlertVC()
+                vc.modalPresentationStyle = .overFullScreen
+                vc.datas = datas
+                self.present(vc, animated: true)
+                
+            case .failure(let _):
+                LUHUD.showText(text: "Data anomalies")
+            }
+            
+        }
+        
+    }
 }

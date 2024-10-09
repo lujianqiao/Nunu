@@ -96,7 +96,9 @@ class LogInViewController: UIViewController {
                 guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
                 guard let data = json["data"] as? [String: Any] else {return}
                 guard let access_token = data["access_token"] as? String else {return}
-                LUConstant.setUserDefaultsData(with: access_token, key: LUConstant.userTokenKey)
+                guard let token_type = data["token_type"] as? String else {return}
+                
+                LUConstant.setUserDefaultsData(with: "\(token_type) \(access_token)", key: LUConstant.userTokenKey)
                 print("access_token===\(access_token)")
                 let delegate = LUConstant.getSceneDelegate()
                 delegate?.window?.rootViewController = LUTabBarController()
