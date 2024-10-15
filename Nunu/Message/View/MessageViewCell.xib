@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets talk about food together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjZ-pp-E9y">
-                                <rect key="frame" x="83.999999999999986" y="75" width="164.66666666666663" height="14.333333333333329"/>
+                                <rect key="frame" x="84" y="75" width="448" height="14.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.46666666666666667" green="0.4823529411764706" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -59,6 +59,7 @@
                             <constraint firstItem="Zs0-3U-juU" firstAttribute="trailing" secondItem="a9C-JD-mRz" secondAttribute="trailing" id="FF5-SS-lcu"/>
                             <constraint firstItem="FjZ-pp-E9y" firstAttribute="top" secondItem="VY3-t4-6pt" secondAttribute="bottom" constant="5" id="JjZ-Yu-Nr6"/>
                             <constraint firstItem="FjZ-pp-E9y" firstAttribute="leading" secondItem="VY3-t4-6pt" secondAttribute="leading" id="LHS-zr-Sja"/>
+                            <constraint firstAttribute="trailing" secondItem="FjZ-pp-E9y" secondAttribute="trailing" constant="10" id="MQ3-6e-cbL"/>
                             <constraint firstItem="ADs-K2-cI7" firstAttribute="centerY" secondItem="1En-fp-MF6" secondAttribute="centerY" id="Nhp-c0-tiU"/>
                             <constraint firstItem="VY3-t4-6pt" firstAttribute="leading" secondItem="Zs0-3U-juU" secondAttribute="trailing" constant="8" id="ahz-Vu-4h3"/>
                             <constraint firstItem="a9C-JD-mRz" firstAttribute="leading" secondItem="ADs-K2-cI7" secondAttribute="trailing" constant="8" id="fnx-cc-ARL"/>

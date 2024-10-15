@@ -11,7 +11,7 @@ import JXBanner
 
 class LogInViewController: UIViewController {
 
-    var isQuickLogon: Bool = false
+    var isQuickLogon: Bool = true
     private var datas: [String] = ["message_1",
                                    "message_2",
                                    "message_3",

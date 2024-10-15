@@ -88,8 +88,6 @@ class MineViewController: UIViewController {
 
 extension MineViewController {
     func getUserInfo() {
-        mineView.reloadUserInfo(with: UserInfoModel.share)
-        
         
         httpProvider.request(.getUserInfo) { result in
 
@@ -97,11 +95,11 @@ extension MineViewController {
             case .success(let response):
                 guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
                 guard let data = json["data"] as? [String: Any] else {return}
-                print("")
-
-
-
-            case .failure(let _):
+                guard let model = UserInfoModel.deserialize(from: data) else {return}
+                UserInfoManager.share.userInfo = model
+                self.mineView.reloadUserInfo(with: UserInfoManager.share.userInfo)
+                
+            case .failure(_):
                 LUHUD.showText(text: "Data anomalies")
             }
 
@@ -119,14 +117,18 @@ extension MineViewController {
                 guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
                 guard let data = json["data"] as? [Any] else {return}
                 guard let models = [PayConfigModel].deserialize(from: data) else {return}
-                let datas = models.filter({$0 != nil}).map({$0!})
+                let datas = models
                 
                 let vc = RechargeDiamondsAlertVC()
                 vc.modalPresentationStyle = .overFullScreen
                 vc.datas = datas
                 self.present(vc, animated: true)
+                vc.paySuccessBlock = { [weak self] in
+                    guard let self = self else { return }
+                    self.getUserInfo()
+                }
                 
-            case .failure(let _):
+            case .failure(_):
                 LUHUD.showText(text: "Data anomalies")
             }
             

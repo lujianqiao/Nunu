@@ -9,15 +9,19 @@ import UIKit
 
 class VideoCallViewController: UIViewController {
 
+    var chat: ChatPartnerModel = ChatPartnerModel()
+    
     lazy var BGImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "message_1")
+        image.image = UIImage(named: chat.image)
+        image.contentMode = .scaleAspectFill
         return image
     }()
     
     lazy var hangUpbutton: UIButton = {
         let btn = UIButton(type: .custom)
         btn.setImage(UIImage(named: "hang_up"), for: .normal)
+        btn.addTarget(self, action: #selector(hangUpbuttonAction), for: .touchUpInside)
         return btn
     }()
     
@@ -82,6 +86,10 @@ class VideoCallViewController: UIViewController {
         if timingNum >= 60 {
             self.dismiss(animated: true)
         }
+    }
+    
+    @objc func hangUpbuttonAction() {
+        self.dismiss(animated: true)
     }
     
 }

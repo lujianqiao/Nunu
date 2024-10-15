@@ -65,6 +65,7 @@ class ChatToolBar: UIView {
         guard let message = textFiled.text else {return}
         guard let block = sendMessageBlock else {return}
         block(message)
+        textFiled.text = nil
     }
     
     @objc func videoButtonAction() {

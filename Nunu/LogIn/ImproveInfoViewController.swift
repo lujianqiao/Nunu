@@ -79,10 +79,10 @@ class ImproveInfoViewController: UIViewController {
 //                delegate?.window?.rootViewController = LUTabBarController()
                 
                 if let imageData = LUConstant.getUserDefaultsValue(with: LUConstant.userAvatarKey) {
-                    UserInfoModel.share.userAvatar = UIImage(data: imageData)
+                    UserInfoManager.share.userInfo.userAvatar = imageData
                 }
-                UserInfoModel.share.userName = name
-                UserInfoModel.share.userGender = gender
+                UserInfoManager.share.userInfo.nick_name = name
+                UserInfoManager.share.userInfo.userGender = gender
                 
                 
                 if self.navigationController?.viewControllers.contains(where: {$0 .isKind(of: RegisterViewController.self)}) == true {

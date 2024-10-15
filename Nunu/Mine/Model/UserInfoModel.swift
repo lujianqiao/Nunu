@@ -7,16 +7,28 @@
 
 import Foundation
 import UIKit
+import SmartCodable
 
-class UserInfoModel {
+class UserInfoManager {
     
-    static let share = UserInfoModel()
+    static let share = UserInfoManager()
+    
+    var userInfo: UserInfoModel = UserInfoModel()
+    
+}
+
+
+struct UserInfoModel: SmartCodable {
     
     /// 头像
-    var userAvatar: UIImage? = UIImage(named: "default_avatar")
+    var userAvatar: Data? = Data()
     /// 用户名
-    var userName: String?
+    var nick_name: String? = ""
     /// 性别 -1未知，0女，1男
-    var userGender: Int?
+    var userGender: Int? = -1
+    /// 金币
+    var chips: Int = 0
+    
+//    required init()
     
 }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		008DA1DD2CB66B0100131B10 /* PayConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008DA1DC2CB66B0100131B10 /* PayConfigModel.swift */; };
+		00DA87EF2CBCC3A8000B3504 /* STIAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA87EC2CBCC3A8000B3504 /* STIAPError.swift */; };
+		00DA87F02CBCC3A8000B3504 /* STIAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA87ED2CBCC3A8000B3504 /* STIAPManager.swift */; };
+		00DA87F32CBD215F000B3504 /* ChatPartnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA87F22CBD215F000B3504 /* ChatPartnerModel.swift */; };
+		00DD9FBF2CBE07F4003EAB13 /* ChatListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DD9FBE2CBE07F4003EAB13 /* ChatListModel.swift */; };
 		07D5663E1F83074F03A7B8AF /* Pods_Nunu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB5CC1BD6D5FF23E86307C5 /* Pods_Nunu.framework */; };
 		361FE4A52C887EDF008D7DCB /* LogOutContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361FE4A42C887EDF008D7DCB /* LogOutContentView.swift */; };
 		361FE4A72C887EED008D7DCB /* LogOutContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361FE4A62C887EED008D7DCB /* LogOutContentView.xib */; };
@@ -85,6 +89,10 @@
 
 /* Begin PBXFileReference section */
 		008DA1DC2CB66B0100131B10 /* PayConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayConfigModel.swift; sourceTree = "<group>"; };
+		00DA87EC2CBCC3A8000B3504 /* STIAPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STIAPError.swift; sourceTree = "<group>"; };
+		00DA87ED2CBCC3A8000B3504 /* STIAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STIAPManager.swift; sourceTree = "<group>"; };
+		00DA87F22CBD215F000B3504 /* ChatPartnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPartnerModel.swift; sourceTree = "<group>"; };
+		00DD9FBE2CBE07F4003EAB13 /* ChatListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModel.swift; sourceTree = "<group>"; };
 		20E6F71BC451D47221C984EE /* Pods-Nunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nunu.debug.xcconfig"; path = "Target Support Files/Pods-Nunu/Pods-Nunu.debug.xcconfig"; sourceTree = "<group>"; };
 		361FE4A42C887EDF008D7DCB /* LogOutContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutContentView.swift; sourceTree = "<group>"; };
 		361FE4A62C887EED008D7DCB /* LogOutContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutContentView.xib; sourceTree = "<group>"; };
@@ -181,6 +189,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00DA87EE2CBCC3A8000B3504 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				00DA87EC2CBCC3A8000B3504 /* STIAPError.swift */,
+				00DA87ED2CBCC3A8000B3504 /* STIAPManager.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		00DA87F12CBD2142000B3504 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00DA87F22CBD215F000B3504 /* ChatPartnerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00DD9FBD2CBE07D0003EAB13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00DD9FBE2CBE07F4003EAB13 /* ChatListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		06954BE4204B2E2054FBB585 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +315,7 @@
 		3693864D2C82BEA000E74952 /* Nunu */ = {
 			isa = PBXGroup;
 			children = (
+				00DA87EE2CBCC3A8000B3504 /* IAP */,
 				3689678E2C8F166E00D87F63 /* Http */,
 				361FE4A82C888702008D7DCB /* LogIn */,
 				369386A32C82ED7B00E74952 /* Navigation */,
@@ -353,6 +387,7 @@
 		3693869E2C82EC0700E74952 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				00DD9FBD2CBE07D0003EAB13 /* Model */,
 				36413DC02C85F58E0076D4DE /* View */,
 				369386A62C82EDE600E74952 /* MessageViewController.swift */,
 				36C22C562C96B4490002B4ED /* ChatViewController.swift */,
@@ -364,6 +399,7 @@
 		3693869F2C82EC0700E74952 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				00DA87F12CBD2142000B3504 /* Model */,
 				369727432C8D6BDA003063C5 /* View */,
 				369386A12C82EC2A00E74952 /* HomeViewController.swift */,
 				36792D212C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift */,
@@ -684,15 +720,19 @@
 				364C4D672C87356100882FC5 /* ComplaintViewController.swift in Sources */,
 				369386A72C82EDE600E74952 /* MessageViewController.swift in Sources */,
 				369727452C8D6C1A003063C5 /* NeedRechargeDiamondsView.swift in Sources */,
+				00DA87F02CBCC3A8000B3504 /* STIAPManager.swift in Sources */,
 				36413DBE2C85F2FC0076D4DE /* MineContentView.swift in Sources */,
 				3693869D2C82EB3B00E74952 /* LUCGFloat+Extension.swift in Sources */,
 				008DA1DD2CB66B0100131B10 /* PayConfigModel.swift in Sources */,
 				36792D222C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift in Sources */,
+				00DD9FBF2CBE07F4003EAB13 /* ChatListModel.swift in Sources */,
 				36C22C592C96B6D90002B4ED /* ChatToolBar.swift in Sources */,
 				368967902C8F167F00D87F63 /* LUHttp.swift in Sources */,
 				361FE4A52C887EDF008D7DCB /* LogOutContentView.swift in Sources */,
 				3693864F2C82BEA000E74952 /* AppDelegate.swift in Sources */,
+				00DA87EF2CBCC3A8000B3504 /* STIAPError.swift in Sources */,
 				36C22C552C96B1C20002B4ED /* LUImage+Ex.swift in Sources */,
+				00DA87F32CBD215F000B3504 /* ChatPartnerModel.swift in Sources */,
 				369386AB2C82EE1600E74952 /* LUTabBarItem.swift in Sources */,
 				369386512C82BEA000E74952 /* SceneDelegate.swift in Sources */,
 				369727492C8D747C003063C5 /* RechargeDiamondsDetailView.swift in Sources */,
@@ -878,7 +918,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D93FAJ658V;
+				DEVELOPMENT_TEAM = HMTY224WRZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nunu/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Nunu;
@@ -886,19 +926,23 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LU.Nunu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LuoXH.Nunu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -910,7 +954,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D93FAJ658V;
+				DEVELOPMENT_TEAM = HMTY224WRZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nunu/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Nunu;
@@ -918,19 +962,23 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LU.Nunu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LuoXH.Nunu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

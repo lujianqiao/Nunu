@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import HandyJSON
+import SmartCodable
 
-struct PayConfigModel: HandyJSON {
+struct PayConfigModel: SmartCodable {
     /// id
     var id: Int = 0
     /// 对应苹果的订阅id

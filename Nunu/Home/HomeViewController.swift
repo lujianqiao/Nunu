@@ -10,18 +10,7 @@ import JXBanner
 
 class HomeViewController: UIViewController {
 
-    private var datas: [String] = ["message_1",
-                                   "message_2",
-                                   "message_3",
-                                   "message_4",
-                                   "message_5",
-                                   "message_6",
-                                   "message_7",
-                                   "message_8",
-                                   "message_9",
-                                   "message_10",
-                                   "message_11",
-                                   "message_12"]
+    private var datas: [ChatPartnerModel] = []
     
     private var currentIndex: Int = 0
     
@@ -50,7 +39,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
-        
+        getListData()
         // Do any additional setup after loading the view.
     }
     
@@ -95,6 +84,17 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func getListData() {
+        var dataArr: [ChatPartnerModel] = []
+        for item in 1...12 {
+            var model = ChatPartnerModel()
+            model.id = "\(item)"
+            model.image = "message_\(item)"
+            dataArr.append(model)
+        }
+        datas = dataArr
+        linearBanner.reloadView()
+    }
 }
 
 //MARK:- JXBannerDataSource
@@ -115,7 +115,7 @@ extension HomeViewController: JXBannerDataSource {
                   cell: UICollectionViewCell)
         -> UICollectionViewCell {
             let tempCell = cell as! JXBannerCell
-            let imageName = datas[index]
+            let imageName = datas[index].image
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
             tempCell.imageView.image = UIImage(named: imageName)

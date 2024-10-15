@@ -106,12 +106,15 @@ class MineContentView: UIView {
     
     
     func reloadUserInfo(with userInfo: UserInfoModel) {
-        if let avatar = userInfo.userAvatar {
-            avatarBtn.setImage( avatar, for: .normal)
+        if let avatar = userInfo.userAvatar, !avatar.isEmpty {
+            avatarBtn.setImage( .init(data: avatar), for: .normal)
+            avatarBtn.setImage( .init(data: avatar), for: .selected)
         }
-        if let name = userInfo.userName {
+        if let name = userInfo.nick_name {
             nameLab.text = name
         }
+        
+        beanLab.text = "\(userInfo.chips)"
     }
     
 }

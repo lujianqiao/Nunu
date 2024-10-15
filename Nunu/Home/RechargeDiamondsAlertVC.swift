@@ -10,6 +10,7 @@ import UIKit
 class RechargeDiamondsAlertVC: UIViewController {
 
     var datas: [PayConfigModel] = []
+    var paySuccessBlock: (() -> Void)?
     
     lazy var bgView: UIView = {
         let view = UIView()
@@ -18,11 +19,6 @@ class RechargeDiamondsAlertVC: UIViewController {
         view.addGestureRecognizer(tap)
         return view
     }()
-    
-//    lazy var needRecharge: NeedRechargeDiamondsView = {
-//        let view = NeedRechargeDiamondsView.view()
-//        return view
-//    }()
     
     lazy var diamondsView: RechargeDiamondsDetailView = {
         let view = RechargeDiamondsDetailView()
@@ -69,6 +65,41 @@ class RechargeDiamondsAlertVC: UIViewController {
         diamondsView.rechargeBlock = {[weak self] model in
             guard let self = self else { return }
             // TODO: -充值
+            let hud = LUHUD.showHUD()
+            STIAPManager.shared.pay(productId: model.pid) { productId, receipt, transaction in
+                hud.hide(animated: true)
+                
+                // 拿到购买凭证
+                guard let transactionIdentifier = transaction.transactionIdentifier else {return}
+                httpProvider.request(.verifyPurchaseProof(productId, receipt, transactionIdentifier, 2)) { result in
+                   
+                    switch result {
+                    case .success(let response):
+                        guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
+                        guard let code = json["code"] as? Int else {return}
+                        if code == 1 {
+                            // 验证通过
+                            self.dismiss(animated: true)
+                            if let block = self.paySuccessBlock {
+                                block()
+                            }
+                        }
+                    case .failure(_):
+                        LUHUD.showText(text: "Data anomalies")
+                    }
+                    
+                }
+                
+                debugPrint("receipt")
+            } failed: { error in
+                hud.hide(animated: true)
+                debugPrint(error)
+            } canceled: {
+                hud.hide(animated: true)
+                debugPrint("cancel")
+            }
+
+            
         }
     }
     

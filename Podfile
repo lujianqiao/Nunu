@@ -18,7 +18,7 @@ target 'Nunu' do
   # 自动管理键盘
   pod 'IQKeyboardManagerSwift', '6.2.1'
   
-  pod 'HandyJSON', '~> 5.0.2'
+  pod 'SmartCodable'
 
   target 'NunuTests' do
     inherit! :search_paths
