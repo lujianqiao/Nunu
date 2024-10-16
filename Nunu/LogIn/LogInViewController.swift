@@ -30,7 +30,7 @@ class LogInViewController: UIViewController {
     lazy var loginView: LogInContentView = {
         let view = LogInContentView.view()
         if self.isQuickLogon {
-            view.registerBtn.isHidden = true
+//            view.registerBtn.isHidden = true
             view.loginBtn.setTitle("Logon", for: .normal)
         }
         return view

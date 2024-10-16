@@ -11,7 +11,9 @@ class LogInContentView: UIView {
 
     
     @IBOutlet weak var loginBtn: UIButton!
-    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var aggreBtn: UIButton!
+    
+//    @IBOutlet weak var registerBtn: UIButton!
     
     var loginBlock:(() -> Void)?
     var registerBlock:(() -> Void)?
@@ -21,6 +23,11 @@ class LogInContentView: UIView {
         return view
     }
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        aggreBtn.titleLabel?.numberOfLines = 0
+    }
+    
     
     @IBAction func logInAction(_ sender: Any) {
         guard let block = loginBlock else {return}
