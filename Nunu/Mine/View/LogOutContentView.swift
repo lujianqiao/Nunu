@@ -9,6 +9,8 @@ import UIKit
 
 class LogOutContentView: UIView {
     
+    private var type: AgreementViewControllerType?
+    
     var closeBlock:(() -> Void)?
     
     @IBOutlet weak var titleLab: UILabel!
@@ -43,12 +45,18 @@ class LogOutContentView: UIView {
         LUConstant.setUserDefaultsData(with: nil, key: LUConstant.userTokenKey)
         let delegate = LUConstant.getSceneDelegate()
         delegate?.window?.rootViewController = LogInViewController()
+        
+        if type == .logOff {
+            LUConstant.resetUUID()
+            LUConstant.setUserDefaultsValue(with: nil, key: LUConstant.userAvatarKey)
+        }
     }
     
     
     
     
     func setType(type: AgreementViewControllerType) {
+        self.type = type
         if type == .exit {
             titleLab.text = "Are you sure to log out?"
             bottonBtn.setTitle("log out", for: .normal)

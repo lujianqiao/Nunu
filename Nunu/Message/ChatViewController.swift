@@ -64,37 +64,12 @@ class ChatViewController: UIViewController {
         
         chatBar.sendMessageBlock = {[weak self] message in
             guard let self = self else {return}
-//            self.datas.append(message)
-//            self.addMessage(with: chatID.id, message: message)
             self.sendMessage(with: chatID.id, message: message)
             self.tableview.reloadData()
         }
     }
     
     
-//    func addMessage(with chatID: String, message: String) {
-//        guard let allData =  LUConstant.getUserDefaultsValue(with: LUConstant.userChatDataKey) else {
-//            
-//            let firstMessage: [String: [String]] = [chatID: [message]]
-//            if let firstData = LUConstant.jsonToData(jsonDic: firstMessage) {
-//                LUConstant.setUserDefaultsValue(with: firstData, key: LUConstant.userChatDataKey)
-//            }
-//            
-//            return
-//        }
-//        
-//        guard var dataJson = LUConstant.dataToDictionary(data: allData) else {return}
-//        if var messages = dataJson[chatID] as? [String] {
-//            messages.append(message)
-//            dataJson[chatID] = messages
-//        } else {
-//            dataJson[chatID] = [message]
-//        }
-//        
-//        if let resultData = LUConstant.jsonToData(jsonDic: dataJson) {
-//            LUConstant.setUserDefaultsValue(with: resultData, key: LUConstant.userChatDataKey)
-//        }
-//    }
     
     func sendMessage(with chatID: String, message: String) {
         
@@ -103,7 +78,7 @@ class ChatViewController: UIViewController {
         userMessage.isUSer = true
         messages.append(userMessage)
         tableview.reloadData()
-        
+        self.scrollToBottom()
         
         httpProvider.request(.sendChat(chatID, "hello")) { result in
             
@@ -117,6 +92,7 @@ class ChatViewController: UIViewController {
                 userMessage.isUSer = false
                 self.messages.append(userMessage)
                 self.tableview.reloadData()
+                self.scrollToBottom()
                 
             case .failure(_):
                 LUHUD.showText(text: "Data anomalies")
@@ -153,6 +129,7 @@ class ChatViewController: UIViewController {
                 }
                 
                 self.tableview.reloadData()
+                self.scrollToBottom()
                 
             case .failure(_):
                 LUHUD.showText(text: "Data anomalies")
@@ -161,12 +138,19 @@ class ChatViewController: UIViewController {
         }
     }
 
+    
+    func scrollToBottom() {
+        guard messages.count > 0 else {return}
+        let lastRowIndex = messages.count - 1
+        let indexPath = IndexPath(row: lastRowIndex, section: 0)
+        tableview.scrollToRow(at: indexPath, at: .bottom, animated: true)
+    }
+    
 }
     
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return readMessage(with: chatID.id).count
         return messages.count
     }
     

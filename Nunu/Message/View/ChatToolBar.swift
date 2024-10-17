@@ -24,6 +24,7 @@ class ChatToolBar: UIView {
         let text = UITextField()
         text.backgroundColor = .white
         text.layer.cornerRadius = 5
+        text.textColor = .black
         return text
     }()
     
@@ -66,6 +67,7 @@ class ChatToolBar: UIView {
         guard let block = sendMessageBlock else {return}
         block(message)
         textFiled.text = nil
+        textFiled.endEditing(true)
     }
     
     @objc func videoButtonAction() {

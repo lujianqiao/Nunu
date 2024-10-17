@@ -93,6 +93,7 @@ extension LUHttp: TargetType {
             
         case .quickLogon:
             let uuid = LUConstant.UUID
+            debugPrint("UUID=====\(uuid)")
             let params: [String: Any] = ["uuid": uuid]
             let data = try! JSONSerialization.data(withJSONObject:params, options: JSONSerialization.WritingOptions.prettyPrinted)
             

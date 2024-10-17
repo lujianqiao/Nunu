@@ -94,8 +94,21 @@ struct LUConstant {
     
     /// 获取UUID
     static var UUID: String {
+        let userDefault = UserDefaults.standard
+        if let uuidString = userDefault.object(forKey: "device_uuid"),
+           let uuid = uuidString as? String {
+            return uuid
+        }
         let uuid = Foundation.UUID().uuidString
+        userDefault.setValue(uuid, forKey: "device_uuid")
+        userDefault.synchronize()
         return uuid
+    }
+    
+    static func resetUUID() {
+        let userDefault = UserDefaults.standard
+        userDefault.setValue(nil, forKey: "device_uuid")
+        userDefault.synchronize()
     }
  
     /// 获取SceneDelegate
@@ -130,7 +143,7 @@ struct LUConstant {
     
     
     /// 保存数据
-    static func setUserDefaultsValue(with data: Data, key: String) {
+    static func setUserDefaultsValue(with data: Data?, key: String) {
         UserDefaults.standard.set(data, forKey: key)
         UserDefaults.standard.synchronize()
     }

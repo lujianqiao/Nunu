@@ -26,6 +26,19 @@ class ComplaintContentView: UIView {
         textV.delegate = self
     }
     
+    @IBAction func confirmAction(_ sender: UIButton) {
+        
+        let hud = LUHUD.showHUD()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            
+            hud.hide(animated: true)
+            LUHUD.showText(text: "Content has been sent")
+            self.textV.text = nil
+            self.ploLab.isHidden = false
+            
+        }
+        
+    }
 }
 
 extension ComplaintContentView: UITextViewDelegate {
