@@ -65,7 +65,7 @@ class RechargeDiamondsAlertVC: UIViewController {
         diamondsView.rechargeBlock = {[weak self] model in
             guard let self = self else { return }
             // TODO: -充值
-            let hud = LUHUD.showHUD()
+            let hud = LUHUD.showHUD(showView: self.view)
             STIAPManager.shared.pay(productId: model.pid) { productId, receipt, transaction in
                 hud.hide(animated: true)
                 
@@ -79,10 +79,16 @@ class RechargeDiamondsAlertVC: UIViewController {
                         guard let code = json["code"] as? Int else {return}
                         if code == 1 {
                             // 验证通过
-                            self.dismiss(animated: true)
-                            if let block = self.paySuccessBlock {
-                                block()
+                            LUHUD.showText(text: "Purchase Success", showView: self.view)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                
+                                self.dismiss(animated: true)
+                                if let block = self.paySuccessBlock {
+                                    block()
+                                }
+                                
                             }
+                            
                         }
                     case .failure(_):
                         LUHUD.showText(text: "Data anomalies")

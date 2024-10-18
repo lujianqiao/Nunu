@@ -117,7 +117,13 @@ extension MineViewController {
                 guard let json = try? JSONSerialization.jsonObject(with: response.data) as? [String: Any] else {return}
                 guard let data = json["data"] as? [Any] else {return}
                 guard let models = [PayConfigModel].deserialize(from: data) else {return}
-                let datas = models
+                var datas = models
+                
+                // 默认选择第一个
+                if var first = datas.first {
+                    first.selected = true
+                    datas[0] = first
+                }
                 
                 let vc = RechargeDiamondsAlertVC()
                 vc.modalPresentationStyle = .overFullScreen
