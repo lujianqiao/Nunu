@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		008DA1DD2CB66B0100131B10 /* PayConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008DA1DC2CB66B0100131B10 /* PayConfigModel.swift */; };
+		00BDD1ED2CC5FEB300AD4B77 /* GToolsAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BDD1EC2CC5FEB300AD4B77 /* GToolsAudioPlayer.swift */; };
+		00BDD1F42CC6034D00AD4B77 /* 1000.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00BDD1F32CC6034D00AD4B77 /* 1000.mp3 */; };
 		00DA87EF2CBCC3A8000B3504 /* STIAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA87EC2CBCC3A8000B3504 /* STIAPError.swift */; };
 		00DA87F02CBCC3A8000B3504 /* STIAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA87ED2CBCC3A8000B3504 /* STIAPManager.swift */; };
 		00DA87F32CBD215F000B3504 /* ChatPartnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA87F22CBD215F000B3504 /* ChatPartnerModel.swift */; };
@@ -89,6 +91,8 @@
 
 /* Begin PBXFileReference section */
 		008DA1DC2CB66B0100131B10 /* PayConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayConfigModel.swift; sourceTree = "<group>"; };
+		00BDD1EC2CC5FEB300AD4B77 /* GToolsAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GToolsAudioPlayer.swift; sourceTree = "<group>"; };
+		00BDD1F32CC6034D00AD4B77 /* 1000.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1000.mp3; sourceTree = "<group>"; };
 		00DA87EC2CBCC3A8000B3504 /* STIAPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STIAPError.swift; sourceTree = "<group>"; };
 		00DA87ED2CBCC3A8000B3504 /* STIAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STIAPManager.swift; sourceTree = "<group>"; };
 		00DA87F22CBD215F000B3504 /* ChatPartnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPartnerModel.swift; sourceTree = "<group>"; };
@@ -189,6 +193,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00BDD1EF2CC5FF2C00AD4B77 /* OtherAssets */ = {
+			isa = PBXGroup;
+			children = (
+				00BDD1F32CC6034D00AD4B77 /* 1000.mp3 */,
+			);
+			path = OtherAssets;
+			sourceTree = "<group>";
+		};
 		00DA87EE2CBCC3A8000B3504 /* IAP */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +327,7 @@
 		3693864D2C82BEA000E74952 /* Nunu */ = {
 			isa = PBXGroup;
 			children = (
+				00BDD1EF2CC5FF2C00AD4B77 /* OtherAssets */,
 				00DA87EE2CBCC3A8000B3504 /* IAP */,
 				3689678E2C8F166E00D87F63 /* Http */,
 				361FE4A82C888702008D7DCB /* LogIn */,
@@ -380,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				3693869A2C82E77000E74952 /* Constant.swift */,
+				00BDD1EC2CC5FEB300AD4B77 /* GToolsAudioPlayer.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -569,6 +583,7 @@
 				369386562C82BEA000E74952 /* Main.storyboard in Resources */,
 				369727472C8D6CA7003063C5 /* NeedRechargeDiamondsView.xib in Resources */,
 				36B9DEF52C89DB1400C11D9C /* ImproveInfoViewController.xib in Resources */,
+				00BDD1F42CC6034D00AD4B77 /* 1000.mp3 in Resources */,
 				361FE4A72C887EED008D7DCB /* LogOutContentView.xib in Resources */,
 				36413DBF2C85F2FC0076D4DE /* MineContentView.xib in Resources */,
 			);
@@ -727,6 +742,7 @@
 				36792D222C8D519000E7EEB8 /* RechargeDiamondsAlertVC.swift in Sources */,
 				00DD9FBF2CBE07F4003EAB13 /* ChatListModel.swift in Sources */,
 				36C22C592C96B6D90002B4ED /* ChatToolBar.swift in Sources */,
+				00BDD1ED2CC5FEB300AD4B77 /* GToolsAudioPlayer.swift in Sources */,
 				368967902C8F167F00D87F63 /* LUHttp.swift in Sources */,
 				361FE4A52C887EDF008D7DCB /* LogOutContentView.swift in Sources */,
 				3693864F2C82BEA000E74952 /* AppDelegate.swift in Sources */,
@@ -921,7 +937,7 @@
 				DEVELOPMENT_TEAM = HMTY224WRZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nunu/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Nunu;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tlgo - AI girls";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your consent is required to access the album so that you can get pictures from the album and upload your avatar.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -957,7 +973,7 @@
 				DEVELOPMENT_TEAM = HMTY224WRZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nunu/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Nunu;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tlgo - AI girls";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Your consent is required to access the album so that you can get pictures from the album and upload your avatar.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
